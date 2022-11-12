@@ -10,7 +10,7 @@
     margin: 10px 0;
 }
 #header h2{
-    padding-left: 3.4em ;
+     padding-left: 3.4em ;
 } 
 #tab{
     display: flex;
@@ -109,7 +109,7 @@ h5{
     justify-content: space-around;
     height: 40vh;
     color: white;
-    margin: 5em 5em;
+    /* margin: 5em 5em; */
     align-items: center;   
 }
 .find-out h1{
@@ -150,19 +150,21 @@ footer #starter{
 @media(max-width:768px){
  #header{   
     flex-direction: row;
+    width: 80vw;
 }
 main{
     padding: 0;
     flex-direction: column-reverse;
     height: auto;
     text-align: center;
+    width: 80vw;
 }
 #banner{
     margin: 0;
     padding: 0;
 }
 #banner img{
-    width: 97vw; 
+    width: 50vw; 
 }
 #intro-text{
     width: 100%;
@@ -176,8 +178,36 @@ h1{
 h5{
     width: 100%;
 }
+.different{
+    padding: 0;
+    text-align: center;
+}
 #mid-section{
+    margin: 0;
     flex-direction: column-reverse;
+    justify-content: center;
+    align-content: space-between;
+    width: 60vw;
+}
+#mid-section div{
+    margin:0;
+}
+.find-out{
+    margin: 0;
+    flex-direction: column;
+    width: 60vw;
+}
+.find-out h1{
+    width: 100%;
+}
+footer{
+    width: 80vw;
+}
+footer #starter{
+    flex-direction:column ;
+}
+footer #end{
+    flex-direction: column;
 }
 
 }
