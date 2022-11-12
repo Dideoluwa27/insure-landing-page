@@ -9,6 +9,9 @@
     justify-content: space-between;
     margin: 10px 0;
 }
+#header h2{
+    padding-left: 3.4em ;
+} 
 #tab{
     display: flex;
     justify-content: space-between;
@@ -37,6 +40,7 @@ a:hover{
     color:black;
     cursor: pointer;
     font-weight: 700;
+    transition: 2s ease;
 }
 main{
      background-color:rgb(45,38,64);
@@ -77,6 +81,14 @@ h5{
     margin-top: 1em;
     border: 1px groove white;
 }
+.btn:hover{
+    cursor: pointer;
+    transition: 2s ease;
+    background-color: white;
+    color:rgb(45,38,64)  ;
+    
+    
+}
 .different{
     padding-top: 12em;
     padding-left: 5em;
@@ -104,7 +116,6 @@ h5{
     width:30%;
 }
 .find-out .icons {
-    /* margin: 0 10px 0 10px; */
     display: flex;
     justify-content: space-between;
 }
@@ -116,6 +127,9 @@ footer li{
     list-style: none;
     margin: 5px 0 5px 0;
 }
+ footer img:hover{
+    cursor: pointer;
+}
 footer #starter{
     display: flex;
     justify-content: space-between;
@@ -125,4 +139,45 @@ footer #starter{
     display:flex;
     justify-content: space-between;
     margin-top: 20px;
+}
+#end li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+@media(max-width:768px){
+ #header{   
+    flex-direction: row;
+}
+main{
+    padding: 0;
+    flex-direction: column-reverse;
+    height: auto;
+    text-align: center;
+}
+#banner{
+    margin: 0;
+    padding: 0;
+}
+#banner img{
+    width: 97vw; 
+}
+#intro-text{
+    width: 100%;
+    height: 40vw;
+    align-items: center;
+    padding: 1em;
+}
+h1{
+    text-align: center;
+}
+h5{
+    width: 100%;
+}
+#mid-section{
+    flex-direction: column-reverse;
+}
+
 }
